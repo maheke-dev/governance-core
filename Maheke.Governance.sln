@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maheke.Governance.Application", "Maheke.Governance.Application\Maheke.Governance.Application.csproj", "{43A8145C-B3FE-4F38-BFE2-523A2EAA47A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maheke.Governance.Domain", "Maheke.Governance.Domain\Maheke.Governance.Domain.csproj", "{10E0F45E-696B-463B-B651-02CBF2870B5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maheke.Governance.Infrastructure", "Maheke.Governance.Infrastructure\Maheke.Governance.Infrastructure.csproj", "{94771A6E-FD62-4A8B-BB2F-AEA68B0571FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maheke.Governance.Test", "Maheke.Governance.Test\Maheke.Governance.Test.csproj", "{AF34BA6D-560D-4453-BEC2-190A96814FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maheke.Governance.Test.Integration", "Maheke.Governance.Test.Integration\Maheke.Governance.Test.Integration.csproj", "{D851011B-E369-40DC-87D8-F2C98C32E565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maheke.Governance.WebApi", "Maheke.Governance.WebApi\Maheke.Governance.WebApi.csproj", "{978E534D-28F7-4432-B7D2-0697C399D665}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43A8145C-B3FE-4F38-BFE2-523A2EAA47A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A8145C-B3FE-4F38-BFE2-523A2EAA47A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A8145C-B3FE-4F38-BFE2-523A2EAA47A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A8145C-B3FE-4F38-BFE2-523A2EAA47A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E0F45E-696B-463B-B651-02CBF2870B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E0F45E-696B-463B-B651-02CBF2870B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E0F45E-696B-463B-B651-02CBF2870B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E0F45E-696B-463B-B651-02CBF2870B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94771A6E-FD62-4A8B-BB2F-AEA68B0571FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94771A6E-FD62-4A8B-BB2F-AEA68B0571FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94771A6E-FD62-4A8B-BB2F-AEA68B0571FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94771A6E-FD62-4A8B-BB2F-AEA68B0571FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF34BA6D-560D-4453-BEC2-190A96814FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF34BA6D-560D-4453-BEC2-190A96814FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF34BA6D-560D-4453-BEC2-190A96814FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF34BA6D-560D-4453-BEC2-190A96814FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D851011B-E369-40DC-87D8-F2C98C32E565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D851011B-E369-40DC-87D8-F2C98C32E565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D851011B-E369-40DC-87D8-F2C98C32E565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D851011B-E369-40DC-87D8-F2C98C32E565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978E534D-28F7-4432-B7D2-0697C399D665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978E534D-28F7-4432-B7D2-0697C399D665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978E534D-28F7-4432-B7D2-0697C399D665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978E534D-28F7-4432-B7D2-0697C399D665}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
