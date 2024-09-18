@@ -1,7 +1,9 @@
 using Maheke.Gov.Application.Proposals;
 using Maheke.Gov.Application.Providers;
+using Maheke.Gov.Application.Votes;
 using Maheke.Gov.Infrastructure.Stellar;
 using Maheke.Gov.Infrastructure.Stellar.Proposals;
+using Maheke.Gov.Infrastructure.Stellar.Votes;
 using StellarDotnetSdk;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,7 +37,9 @@ builder.Services.AddScoped(_ => new SystemAccountConfiguration(
 
 builder.Services.AddScoped(_ => new Server(Environment.GetEnvironmentVariable("HORIZON_URL")));
 builder.Services.AddScoped<ProposalService>();
+builder.Services.AddScoped<VoteService>();
 builder.Services.AddScoped<IProposalRepository, ProposalRepository>();
+builder.Services.AddScoped<IVoteRepository, VoteRepository>();
 builder.Services.AddScoped(_ => new DateTimeProvider(DateTime.UtcNow));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
