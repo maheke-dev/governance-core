@@ -35,7 +35,6 @@ builder.Services.AddScoped(_ => new SystemAccountConfiguration(
     Environment.GetEnvironmentVariable("MAHEKE_RESULTS_ACCOUNT_PRIVATE_KEY") ??
     throw new ApplicationException("MAHEKE_RESULTS_ACCOUNT_PRIVATE_KEY not set")));
 
-builder.Services.AddScoped(_ => new Server(Environment.GetEnvironmentVariable("HORIZON_URL")));
 builder.Services.AddScoped<ProposalService>();
 builder.Services.AddScoped<VoteService>();
 builder.Services.AddScoped<IProposalRepository, ProposalRepository>();
@@ -53,8 +52,21 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    Network.Use(new Network(Environment.GetEnvironmentVariable("HORIZON_NETWORK_PASSPHRASE")));
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
 }
+else if (app.Environment.IsStaging())
+{
+    Network.UseTestNetwork();
+    app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+}
+else
+{
+    Network.UsePublicNetwork();
+}
+
 app.UseSwaggerUI();
 app.MapSwagger();
 //app.UseHttpLogging();
